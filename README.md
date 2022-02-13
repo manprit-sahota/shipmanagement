@@ -25,10 +25,10 @@ Screen consist of a Ship Management module.
  - Service Repository Pattern
 
 # Instruction to run the project
-Install [Docker](https://docs.docker.com/desktop/windows/install/) and [VS Code](https://code.visualstudio.com/download) on windows machine. After installation is done, open the project in VS Code and follow below steps:
+Install [Docker](https://docs.docker.com/desktop/windows/install/) , [VS Code](https://code.visualstudio.com/download) and [.NET 6 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/6.0) on windows machine. After installation is done, open the project in VS Code and follow below steps:
 
  1. Install [Docker](https://code.visualstudio.com/docs/containers/overview) and [C#](https://code.visualstudio.com/docs/languages/csharp) Extension in Visual Studio Code
- 2. Build the Docker Images by right click on Docker file and select option "Build Image". There are two docker files. One is for React project which is present inside **reactclient** folder and another is for Web API which is present inside **webservice** folder.
+ 2. Build the Docker Images by right click on Docker file and select option "Build Image". There are two docker files. One is for React project which is present inside **reactclient** folder and another is for Web API which is present inside **webservice/Shipmanagement.API** folder.
  3. After both the images are build successfully, open Docker Desktop and navigate to Images tab. 
  4. Run the shipmanagement image by clicking on Run button. Click on Optional setting to set the port for project and enter port 5000. You can add name as "shipAPI" but its optional. 
  5. Navigate to Container tab and verify that Container is running. 
