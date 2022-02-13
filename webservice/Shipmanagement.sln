@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32126.317
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shipmanagement.API", "ShipManagement.API\Shipmanagement.API.csproj", "{A47DEDC9-65F9-4969-B770-BF6DF0F2DDDE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shipmanagement.Models", "Shipmanagement.Models\Shipmanagement.Models.csproj", "{D0104C57-F71A-4F50-B244-FD0D5F6618AF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shipmanagement.ViewModels", "Shipmanagement.ViewModels\Shipmanagement.ViewModels.csproj", "{F4F15A2A-7EC1-4AB2-9E12-5EEBB3561E62}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shipmanagement.Repository", "Shipmanagement.Repository\Shipmanagement.Repository.csproj", "{009EBE59-4B99-4079-B3EA-55A22A387677}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shipmanagement.Service", "Shipmanagement.Service\Shipmanagement.Service.csproj", "{61337E2A-1AE1-408B-B38A-6436C2AA5D07}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shipmanagement.Tests", "Shipmanagement.Tests\Shipmanagement.Tests.csproj", "{CBB807B1-CA53-48E2-98FA-F7EE35767361}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A47DEDC9-65F9-4969-B770-BF6DF0F2DDDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A47DEDC9-65F9-4969-B770-BF6DF0F2DDDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A47DEDC9-65F9-4969-B770-BF6DF0F2DDDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A47DEDC9-65F9-4969-B770-BF6DF0F2DDDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0104C57-F71A-4F50-B244-FD0D5F6618AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0104C57-F71A-4F50-B244-FD0D5F6618AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0104C57-F71A-4F50-B244-FD0D5F6618AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0104C57-F71A-4F50-B244-FD0D5F6618AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4F15A2A-7EC1-4AB2-9E12-5EEBB3561E62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4F15A2A-7EC1-4AB2-9E12-5EEBB3561E62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4F15A2A-7EC1-4AB2-9E12-5EEBB3561E62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4F15A2A-7EC1-4AB2-9E12-5EEBB3561E62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{009EBE59-4B99-4079-B3EA-55A22A387677}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{009EBE59-4B99-4079-B3EA-55A22A387677}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{009EBE59-4B99-4079-B3EA-55A22A387677}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{009EBE59-4B99-4079-B3EA-55A22A387677}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61337E2A-1AE1-408B-B38A-6436C2AA5D07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61337E2A-1AE1-408B-B38A-6436C2AA5D07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61337E2A-1AE1-408B-B38A-6436C2AA5D07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61337E2A-1AE1-408B-B38A-6436C2AA5D07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBB807B1-CA53-48E2-98FA-F7EE35767361}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBB807B1-CA53-48E2-98FA-F7EE35767361}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBB807B1-CA53-48E2-98FA-F7EE35767361}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBB807B1-CA53-48E2-98FA-F7EE35767361}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8004B4AE-C921-4662-A70F-4924786EFB08}
+	EndGlobalSection
+EndGlobal

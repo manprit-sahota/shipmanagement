@@ -1,0 +1,15 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/webservice/Shipmanagement.API/bin/Debug/net6.0
+/webservice/Shipmanagement.API/obj
+/webservice/Shipmanagement.Models/obj
+/webservice/Shipmanagement.Models/bin/Debug/netstandard2.1
+/webservice/Shipmanagement.Repository/bin/Debug/net6.0
+/webservice/Shipmanagement.Repository/obj
+/webservice/Shipmanagement.Service/bin/Debug/net6.0
+/webservice/Shipmanagement.Service/obj
+/webservice/Shipmanagement.Tests/obj
+/webservice/Shipmanagement.ViewModels/bin/Debug/netstandard2.1
+/webservice/Shipmanagement.ViewModels/obj
