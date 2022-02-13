@@ -13,27 +13,27 @@ namespace Shipmanagement.Repository.Implementation
             _dataContext = dataContext;
         }
 
-        public bool Delete(T entity)
+        public virtual bool Delete(T entity)
         {
             return _dataContext.Delete<T>(entity);
         }
 
-        public IEnumerable<T> GetAll()
+        public virtual IEnumerable<T> GetAll()
         {
             return _dataContext.GetAll<T>();
         }
 
-        public T GetById(object id)
+        public virtual T GetById(object id)
         {
             return _dataContext.GetById<T>(id);
         }
 
-        public bool Insert(T entity)
+        public virtual bool Insert(T entity)
         {
             return _dataContext.Insert<T>(entity);
         }
 
-        public bool Update(T entity)
+        public virtual bool Update(T entity)
         {
             return _dataContext.Update<T>(entity);
         }

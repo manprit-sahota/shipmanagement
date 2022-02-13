@@ -16,7 +16,7 @@ namespace Shipmanagement.Repository.Implementation
         /// <param name="id"></param>
         /// <param name="code"></param>
         /// <returns>True if ship code is unque else false</returns>
-        public bool IsShipCodeUnique(Guid id, string code)
+        public virtual bool IsShipCodeUnique(Guid id, string code)
         {
             return GetAll().Any(s => s.Id != id && Convert.ToString(s.Code).Trim().ToLower() == Convert.ToString(code).Trim().ToLower()) == false;
         }
@@ -27,7 +27,7 @@ namespace Shipmanagement.Repository.Implementation
         /// <param name="id"></param>
         /// <param name="lastModifiedOn"></param>
         /// <returns></returns>
-        public bool IsShipModifiedAlready(Guid id, DateTime lastModifiedOn)
+        public virtual bool IsShipModifiedAlready(Guid id, DateTime lastModifiedOn)
         {
             var ship = GetById(id);
             if (ship == null)

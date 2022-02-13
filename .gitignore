@@ -13,3 +13,5 @@
 /webservice/Shipmanagement.Tests/obj
 /webservice/Shipmanagement.ViewModels/bin/Debug/netstandard2.1
 /webservice/Shipmanagement.ViewModels/obj
+/webservice/Shipmanagement.Tests/bin/Debug/net6.0
+/webservice/.vs/Shipmanagement/v17
