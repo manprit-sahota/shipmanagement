@@ -1,14 +1,22 @@
-﻿using Shipmanagement.Models;
+﻿using Microsoft.Extensions.Logging;
+using Shipmanagement.Models;
 using Shipmanagement.Repository.Contract;
 
 namespace Shipmanagement.Repository.Implementation
 {
     public class StaticListDataContext : IDataContext
     {
+        private readonly ILogger<StaticListDataContext> _logger;
+
         public static Dictionary<Type, IEnumerable<BaseEntity>> Database = new()
         {
             { typeof(Ship), new List<Ship>() }
         };
+
+        public StaticListDataContext(ILogger<StaticListDataContext> logger)
+        {
+            _logger = logger;
+        }
 
         /// <summary>
         /// Returns list of all data
@@ -51,7 +59,7 @@ namespace Shipmanagement.Repository.Implementation
             }
             catch (Exception ex)
             {
-                // TODO: Add log
+                _logger.LogError(ex, "Unable to add record");
             }
             return false;
         }
@@ -72,9 +80,9 @@ namespace Shipmanagement.Repository.Implementation
                 Database[typeof(T)] = data;
                 return true;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                // TODO: Add log
+                _logger.LogError(ex, "Unable to add record");
             }
             return false;
         }
@@ -95,7 +103,7 @@ namespace Shipmanagement.Repository.Implementation
             }
             catch (Exception ex)
             {
-                // TODO: Add log
+                _logger.LogError(ex, "Unable to add record");
             }
             return false;
         }
