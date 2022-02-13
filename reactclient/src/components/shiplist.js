@@ -49,7 +49,7 @@ function ShipList(){
             </thead>
             <tbody>
               {ships.map((ship, key)=>{
-                return(<tr>
+                return(<tr key={ship.id}>
                     <td>{ship.code}</td>
                     <td>{ship.name}</td>
                     <td>{ship.width}</td>
