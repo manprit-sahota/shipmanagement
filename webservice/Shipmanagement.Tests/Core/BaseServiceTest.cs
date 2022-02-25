@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 using Moq;
 using Shipmanagement.Models;
 using Shipmanagement.Repository;
@@ -24,6 +25,14 @@ namespace Shipmanagement.Tests.Core
             var services = new ServiceCollection();
             services.AddServiceLayer();
             services.AddRepositoryLayer();
+
+            var mock = new Mock<ILogger<StaticListDataContext>>();
+            ILogger<StaticListDataContext> logger = mock.Object;
+
+            services.AddTransient<ILogger<StaticListDataContext>>((s) => 
+            {
+                return logger;
+            });
 
             // INFO :: Setup ship mock repository
             services.AddTransient<IShipRepository, ShipRepository>(s =>
